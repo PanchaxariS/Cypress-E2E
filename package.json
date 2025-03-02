@@ -5,8 +5,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "Cypress_test": "cypress run",
-    "Cypress=prod-test": "npx cypress run --spec cypress/e2e/testEnv.cy.js --config-file prod.config.js",
-    "Cypress=stage-test": "npx cypress run --spec cypress/e2e/testEnv.cy.js --config-file prod.stage.js"
+    "Cypress=prod-test": "npx cypress run --spec cypress/e2e/PracticeCypressFeatures/testEnv.cy.js --config-file prod.config.js",
+    "Cypress=stage-test": "npx cypress run --spec cypress/e2e/PracticeCypressFeatures/testEnv.cy.js --config-file prod.stage.js",
+    "AddToCart": "npx cypress run --browser chrome --spec cypress/e2e/E2E/tests/addToCartTest.cy.js"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +15,8 @@
   "description": "",
   "dependencies": {
     "cypress": "^14.1.0"
+  },
+  "devDependencies": {
+    "cypress-mochawesome-reporter": "^3.8.2"
   }
 }
