@@ -1,0 +1,18 @@
+{
+  "name": "cypress-framework",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "Cypress_test": "cypress run",
+    "Cypress=prod-test": "npx cypress run --spec cypress/e2e/testEnv.cy.js --config-file prod.config.js",
+    "Cypress=stage-test": "npx cypress run --spec cypress/e2e/testEnv.cy.js --config-file prod.stage.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cypress": "^14.1.0"
+  }
+}
