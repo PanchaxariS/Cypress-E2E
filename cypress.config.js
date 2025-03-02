@@ -6,8 +6,7 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     env: {
-      email: "p1shanvadmeti@gmail.com",
-      password: "Admin123",
+      URL: "https://naveenautomationlabs.com/opencart/index.php?route=account/register",
     },
   },
 });
